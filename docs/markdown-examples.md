@@ -1019,7 +1019,8 @@ const D = undefined || 'maomao' // 'maomao'
 ::: tip ?? 和 || 的区别
 
 - **`??` 运算符**只有左侧是 `null` 或 `undefined`才会返回右侧的值
-- **`||` 运算符**只要左侧是 [假值](/fe/javascript/conversions#toboolean) 就会返回右侧的值
+- **`||` 运算符**只要左侧是假值就会返回右侧的值
+[//]: # (- **`||` 运算符**只要左侧是 [假值]&#40;/fe/javascript/conversions#toboolean&#41; 就会返回右侧的值)
 
 :::
 
