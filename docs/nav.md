@@ -5,7 +5,7 @@ outline: [2, 3, 4]
 ---
 
 <script setup>
-import ltNav from '../docs/views/nav/index.vue'
+import ltNav from './views/nav/index.vue'
 </script>
 
 # 前端导航

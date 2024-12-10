@@ -13,10 +13,10 @@ hero:
   actions:
     - theme: brand
       text: 前端物语
-      link: /markdown-examples
+      link: /views/base/es6
     - theme: alt
       text: 前端导航
-      link: /api-examples
+      link: /nav
     - theme: alt
       text: 日常笔记
       link: /api-examples
