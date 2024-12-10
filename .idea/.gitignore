@@ -3,3 +3,10 @@
 /workspace.xml
 # 基于编辑器的 HTTP 客户端请求
 /httpRequests/
+/codeStyles/codeStyleConfig.xml
+/git_toolbox_blame.xml
+/git_toolbox_prj.xml
+/GitCommitMessageStorage.xml
+/modules.xml
+/private-notes.iml
+/vcs.xml
