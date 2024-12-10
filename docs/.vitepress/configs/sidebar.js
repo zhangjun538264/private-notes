@@ -1,5 +1,5 @@
 export const sidebar = {
-    '/fe/': [
+    '/views/base/': [
         {
             text: 'JavaScript 基础知识',
             collapsed: false,

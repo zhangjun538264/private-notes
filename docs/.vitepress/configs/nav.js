@@ -5,7 +5,7 @@ export const nav = [
         items: [
             { text: 'JavaScript 基础知识', link: '/fe/javascript/types' },
             { text: 'CSS 理论知识点', link: '/fe/css/' },
-            { text: 'ES6 常用知识', link: '/fe/es6/' },
+            { text: 'ES6 常用知识', link: '/views/base/es6' },
             {
                 items: [
                     { text: 'TypeScript 基础知识', link: '/fe/typescript/base' },
