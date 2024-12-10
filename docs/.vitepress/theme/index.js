@@ -1,13 +1,15 @@
 // https://vitepress.dev/guide/custom-theme
-import { h,watch } from 'vue'
+import {h, watch} from 'vue'
 import DefaultTheme from 'vitepress/theme'
+
 import layout from './components/layout.vue'
-// import './style.css'
+import navLinks from './components/navLinks.vue'
+
 import './styles/index.scss'
 
 
 let homePageStyle = ''
-/** @type {import('vitepress').Theme} */
+
 export default {
   extends: DefaultTheme,
   Layout: () => {
@@ -15,6 +17,8 @@ export default {
     return h(layout,props)
   },
   enhanceApp({ app, router, siteData }) {
+    app.component('navLinks',navLinks)
+
     if (typeof window !== 'undefined') {
       watch(
           () => router.route.data.relativePath,

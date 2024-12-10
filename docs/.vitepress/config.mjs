@@ -1,6 +1,5 @@
-
 import {defineConfig} from 'vitepress'
-import {head,algolia} from './configs'
+import {algolia, head, nav, sidebar} from './configs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -21,20 +20,8 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         i18nRouting: false,
         logo: '/logo.png',
-        nav: [
-            {text: 'Home', link: '/'},
-            {text: 'Examples', link: '/markdown-examples'}
-        ],
-
-        sidebar: [
-            {
-                text: 'Examples',
-                items: [
-                    {text: 'Markdown Examples', link: '/markdown-examples'},
-                    {text: 'Runtime API Examples', link: '/api-examples'}
-                ]
-            }
-        ],
+        nav,
+        sidebar,
 
         socialLinks: [
             {icon: 'github', link: 'https://github.com/vuejs/vitepress'}
