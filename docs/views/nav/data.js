@@ -1,212 +1,131 @@
 export const navData = [
     {
-        title: '常用工具',
+        title: '前端学习资料',
         items: [
             {
-                icon: 'https://caniuse.com/img/favicon-128.png',
-                title: 'Can I use',
-                desc: '前端 API 兼容性查询',
-                link: 'https://caniuse.com'
+                icon: '/icons/mdn.svg',
+                title: 'MDN | Web 开发者指南',
+                desc: 'Mozilla 的开发者平台，提供了大量关于 HTML、CSS 和 JavaScript 的详细文档以及广泛的 Web API 参考资',
+                link: 'https://developer.mozilla.org/zh-CN'
             },
             {
-                icon: 'https://tinypng.com/images/apple-touch-icon.png',
-                title: 'TinyPNG',
-                desc: '在线图片压缩工具',
-                link: 'https://tinypng.com'
+                icon: '/icons/runoob.svg',
+                title: '菜鸟教程',
+                desc: '学的不仅是技术，更是梦想！',
+                link: 'https://www.runoob.com'
             },
             {
-                icon: '/icons/carbon.png',
-                title: 'Carbon',
-                desc: '代码图片生成',
-                link: 'https://carbon.now.sh'
+                icon: '/icons/es6.svg',
+                title: 'ES6 入门教程',
+                desc: '阮一峰的网络日志',
+                link: 'http://es6.ruanyifeng.com'
             },
             {
-                icon: 'https://npm.devtool.tech/logo.svg',
-                title: 'npm 库在线执行',
-                desc: '在浏览器控制台中在线运行调试与测试 npm 中的库',
-                link: 'https://npm.devtool.tech'
-            },
-            {
-                icon: 'https://devtool.tech/logo.svg',
-                title: '开发者武器库',
-                desc: '开发者武器库，做开发者最专业最好用的专业工具箱',
-                link: 'https://devtool.tech'
-            },
-            {
-                icon: 'https://tool.lu/favicon.ico',
-                title: '在线工具',
-                desc: '开发人员的工具箱',
-                link: 'https://tool.lu'
-            },
-            {
-                icon: '/icons/json-cn.ico',
-                title: 'Json 中文网',
-                desc: 'JSON 在线解析及格式化验证',
-                link: 'https://www.json.cn'
-            },
-            {
-                icon: 'https://transform.tools/static/favicon.png',
-                title: 'transform',
-                desc: '一个支持多语言的在线转换器',
-                link: 'https://transform.tools/json-schema-to-typescript'
-            },
-            {
-                icon: '/icons/excalidraw.ico',
-                title: 'Excalidraw',
-                desc: '手绘风格流程图',
-                link: 'https://excalidraw.com'
+                badge: '官网',
+                icon: '/icons/typescript.svg',
+                title: 'TypeScript',
+                desc: 'TypeScript 是具有类型语法的 JavaScript',
+                link: 'https://www.typescriptlang.org/zh/'
             }
         ]
     },
     {
-        title: '高质量周刊与博客',
+        title: '前端框架',
         items: [
             {
-                badge: '周一更新',
-                icon: '/icons/frontender-ua.png',
-                title: 'Frontend Weekly',
-                desc: '前端周刊',
-                link: 'https://frontender-ua.medium.com'
+                icon: 'https://cn.vuejs.org/logo.svg',
+                title: 'Vue 3.x',
+                desc: '渐进式 JavaScript 框架',
+                link: 'https://cn.vuejs.org'
             },
             {
-                badge: '周五更新',
-                icon: '/icons/ruanyifeng.jpeg',
-                title: '科技爱好者周刊',
-                desc: '阮一峰的科技爱好者周刊',
-                link: 'https://www.ruanyifeng.com/blog/archives.html'
+                icon: 'https://cn.vuejs.org/logo.svg',
+                title: 'Vue 2.x',
+                desc: '渐进式 JavaScript 框架',
+                link: 'https://v2.cn.vuejs.org'
             },
             {
-                badge: '周五更新',
-                icon: 'https://s0.ssl.qhres2.com/static/3444fd94a3c31e92.ico',
-                title: '奇舞周刊',
-                desc: '领略前端技术 阅读奇舞周刊（360 前端团队）',
-                link: 'https://weekly.75.team'
+                icon: '/icons/react.svg',
+                title: 'React',
+                desc: '用于构建用户界面的 JavaScript 库',
+                link: 'https://zh-hans.react.dev'
             },
             {
-                badge: '周一更新',
-                icon: 'https://img.alicdn.com/imgextra/i3/O1CN01uKTVpD1UK8BCxFBwo_!!6000000002498-2-tps-500-500.png',
-                title: 'MDH Weekly',
-                desc: '云谦的前端周刊',
-                link: 'https://mdhweekly.com/weekly'
+                icon: '/icons/angular.svg',
+                title: 'Angular',
+                desc: '一个 Web 框架，使开发人员能够构建快速、可靠的应用程序',
+                link: 'https://angular.dev'
             },
             {
-                badge: '每周更新',
-                icon: '/icons/geekhyt-weekly.png',
-                title: '前端食堂技术周刊',
-                desc: '周周尝鲜，人工筛选前端圈每周最新资讯',
-                link: 'https://hungryturbo.zhubai.love'
-                // link: 'https://github.com/Geekhyt/weekly'
+                icon: '/icons/svelte.svg',
+                title: 'Svelte',
+                desc: '一种构建用户界面的全新方法',
+                link: 'https://svelte.dev'
             },
-            {
-                icon: 'https://overreacted.io/icons/icon-96x96.png?v=8c19a894ebc3f54d282a8f2418cf5398',
-                title: 'Overreacted',
-                desc: 'Dan Abramov 的个人博客',
-                link: 'https://overreacted.io/zh-hans'
-            },
-            {
-                icon: 'https://xiaolincoding.com/logo.webp',
-                title: '小林coding',
-                desc: '小林 x 图解计算机基础（计算机网络、操作系统、计算机组成、数据库）',
-                link: 'https://xiaolincoding.com'
-            },
-            {
-                icon: 'https://antfu.me/favicon.svg',
-                title: 'Blog - Anthony Fu',
-                desc: 'Vue, Vite, Nuxt 核心团队成员 | VueUse, Slidev, Vitest, UnoCSS 作者',
-                link: 'https://antfu.me/posts'
-            },
-            {
-                icon: 'https://cdn.zhangxinxu.com/zxx_ico.png',
-                title: '鑫空间-鑫生活',
-                desc: '张鑫旭的个人博客',
-                link: 'https://www.zhangxinxu.com/wordpress'
-            },
-            {
-                icon: '/icons/ascoders.png',
-                title: '前端精读周刊',
-                desc: '帮你理解最前沿、实用的技术',
-                link: 'https://github.com/ascoders/weekly'
-            },
-            {
-                icon: '/icons/mqyqingfeng.jpeg',
-                title: '冴羽博客',
-                desc: '四个系列：JavaScript深入系列、JavaScript专题系列、ES6系列、React系列',
-                link: 'https://github.com/mqyqingfeng/Blog'
-            }
         ]
     },
     {
-        title: 'AI 导航',
+        title: 'Vue 生态',
         items: [
             {
-                badge: '对话',
-                icon: '/icons/chatgpt.png',
-                title: 'ChatGPT（最强）',
-                link: 'https://chat.openai.com/chat'
+                icon: 'https://cn.vuejs.org/logo.svg',
+                title: 'Vue Router',
+                desc: 'Vue.js 的官方路由\n为 Vue.js 提供富有表现力、可配置的、方便的路由',
+                link: 'https://router.vuejs.org/zh'
             },
             {
-                icon: '/icons/chatgpt.png',
-                title: 'ChatGPT 镜像站点列表',
-                link: 'https://github.com/xx025/carrot'
+                icon: 'https://pinia.vuejs.org/logo.svg',
+                title: 'Pinia',
+                desc: '符合直觉的 Vue.js 状态管理库',
+                link: 'https://pinia.vuejs.org/zh'
             },
             {
-                badge: '笔记',
-                icon: 'https://www.notion.so/images/logo-ios.png',
-                title: 'Notion AI',
-                link: 'https://www.notion.so'
+                icon: 'https://nuxt.com/icon.png',
+                title: 'Nuxt.js',
+                desc: '一个基于 Vue.js 的通用应用框架',
+                link: 'https://nuxt.com'
             },
             {
-                badge: '绘画',
-                icon: 'https://www.midjourney.com/apple-touch-icon.png',
-                title: 'Midjourney',
-                link: 'https://www.midjourney.com'
+                icon: 'https://vueuse.org/favicon.svg',
+                title: 'VueUse',
+                desc: 'Vue Composition API 的常用工具集',
+                link: 'https://vueuse.org'
             },
             {
-                badge: '绘画',
-                icon: 'https://stablediffusionweb.com/favicon.ico',
-                title: 'Stable Diffusion',
-                link: 'https://stablediffusionweb.com'
-            }
-        ]
-    },
-    {
-        title: '茂茂的站点导航',
-        items: [
-            {
-                icon: '/logo.png',
-                title: '前端日常笔记',
-                desc: '日常笔记记录（零零散散啥都记系列）',
-                link: 'https://github.com/maomao1996/daily-notes'
+                icon: 'https://element-plus.org/images/element-plus-logo-small.svg',
+                title: 'Element Plus',
+                desc: '基于 Vue 3，面向设计师和开发者的组件库',
+                link: 'https://element-plus.org'
             },
             {
-                icon: '/logo.png',
-                title: '前端思维导图',
-                desc: '用思维导图的方式总结个人所学知识',
-                link: 'https://mindmap.fe-mm.com'
+                icon: 'https://www.antdv.com/assets/logo.1ef800a8.svg',
+                title: 'Ant Design Vue',
+                desc: 'Ant Design 的 Vue 实现，开发和服务于企业级后台产品',
+                link: 'https://antdv.com'
             },
             {
-                icon: 'https://qwerty.fe-mm.com/apple-touch-icon.png',
-                title: 'Qwerty Learner',
-                desc: '为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件',
-                link: 'https://qwerty.fe-mm.com'
+                icon: '/icons/iview.svg',
+                title: 'View Design',
+                desc: '基于 Vue.js 3 的一套 UI 组件库，主要用于企业级中后台系统。',
+                link: 'https://www.iviewui.com/view-ui-plus/guide/introduce'
             },
             {
-                icon: '/logo.png',
-                title: 'mmPlayer',
-                desc: 'mmPlayer 在线音乐播放器',
-                link: 'https://netease-music.fe-mm.com'
-            }
+                icon: 'https://fastly.jsdelivr.net/npm/@vant/assets/logo.png',
+                title: 'Vant',
+                desc: '轻量、可定制的移动端 Vue 组件库',
+                link: 'https://vant-ui.github.io/vant'
+            },
+            {
+                icon: 'https://webapp.didistatic.com/static/webapp/shield/Cube-UI_logo.ico',
+                title: 'Cube UI',
+                desc: '基于 Vue.js 实现的精致移动端组件库',
+                link: 'https://didi.github.io/cube-ui'
+            },
         ]
     },
     {
         title: 'React 生态',
         items: [
-            {
-                icon: 'https://zh-hans.reactjs.org/favicon.ico',
-                title: 'React',
-                desc: '用于构建用户界面的 JavaScript 库',
-                link: 'https://zh-hans.reactjs.org'
-            },
             {
                 icon: 'https://reactrouter.com/favicon-light.png',
                 title: 'React Router',
@@ -264,7 +183,7 @@ export const navData = [
             {
                 icon: 'https://jotai.org/favicon.svg',
                 title: 'Jotai',
-                desc: 'primitive and flexible state management for React',
+                desc: 'React 的原始和灵活的状态管理',
                 link: 'https://jotai.org'
             },
             {
@@ -288,91 +207,61 @@ export const navData = [
         ]
     },
     {
-        title: 'Vue 生态',
+        title: 'JavaScript 库',
         items: [
             {
-                icon: 'https://cn.vuejs.org/logo.svg',
-                title: 'Vue 3',
-                desc: '渐进式 JavaScript 框架',
-                link: 'https://cn.vuejs.org'
-            },
-            {
-                icon: 'https://cn.vuejs.org/logo.svg',
-                title: 'Vue 2',
-                desc: '渐进式 JavaScript 框架',
-                link: 'https://v2.cn.vuejs.org'
-            },
-            {
-                icon: 'https://cn.vuejs.org/logo.svg',
-                title: 'Vue Router',
-                desc: 'Vue.js 的官方路由\n为 Vue.js 提供富有表现力、可配置的、方便的路由',
-                link: 'https://router.vuejs.org/zh'
-            },
-            {
-                icon: 'https://pinia.vuejs.org/logo.svg',
-                title: 'Pinia',
-                desc: '符合直觉的 Vue.js 状态管理库',
-                link: 'https://pinia.vuejs.org/zh'
-            },
-            {
-                icon: 'https://nuxt.com/icon.png',
-                title: 'Nuxt.js',
-                desc: '一个基于 Vue.js 的通用应用框架',
-                link: 'https://nuxt.com'
-            },
-            {
-                icon: 'https://vueuse.org/favicon.svg',
-                title: 'VueUse',
-                desc: 'Vue Composition API 的常用工具集',
-                link: 'https://vueuse.org'
-            },
-            {
-                icon: 'https://element-plus.org/images/element-plus-logo-small.svg',
-                title: 'Element Plus',
-                desc: '基于 Vue 3，面向设计师和开发者的组件库',
-                link: 'https://element-plus.org'
-            },
-            {
-                icon: 'https://www.antdv.com/assets/logo.1ef800a8.svg',
-                title: 'Ant Design Vue',
-                desc: 'Ant Design 的 Vue 实现，开发和服务于企业级后台产品',
-                link: 'https://antdv.com'
-            },
-            {
-                icon: 'https://fastly.jsdelivr.net/npm/@vant/assets/logo.png',
-                title: 'Vant',
-                desc: '轻量、可定制的移动端 Vue 组件库',
-                link: 'https://vant-ui.github.io/vant'
-            },
-            {
-                icon: 'https://webapp.didistatic.com/static/webapp/shield/Cube-UI_logo.ico',
-                title: 'Cube UI',
-                desc: '基于 Vue.js 实现的精致移动端组件库',
-                link: 'https://didi.github.io/cube-ui'
-            },
-            {
-                icon: 'https://img14.360buyimg.com/imagetools/jfs/t1/167902/2/8762/791358/603742d7E9b4275e3/e09d8f9a8bf4c0ef.png',
-                title: 'NutUI',
-                desc: '京东风格的轻量级移动端组件库',
-                link: 'https://nutui.jd.com'
-            }
-        ]
-    },
-    {
-        title: 'JavaScript 框架类库',
-        items: [
-            {
-                icon: 'https://svelte.dev/svelte-logo-horizontal.svg',
-                title: 'Svelte',
-                desc: '将声明性组件转换为精准高效更新 DOM 的 JavaScript 代码',
-                link: 'https://svelte.dev'
-            },
-            {
-                // icon: 'https://simpleicons.org/icons/jquery.svg',
                 icon: '/icons/jquery.svg',
-                title: 'jQuery API 中文文档',
-                desc: '一个兼容多浏览器的 JavaScript 框架',
-                link: 'https://jquery.cuishifeng.cn'
+                title: 'jQuery',
+                desc: '一个快速、小型且功能丰富的 JavaScript 库',
+                link: 'https://jquery.com'
+            },
+            {
+                icon: '/icons/lodash.svg',
+                title: 'Lodash',
+                desc: '一个一致性、模块化、高性能的 JavaScript 实用工具库',
+                link: 'https://www.lodashjs.com/'
+            },
+            {
+                icon: '/icons/axios.svg',
+                title: 'Axios',
+                desc: 'Axios 是一个简单的基于 Promise 的 HTTP 客户端，用于浏览器和 node.js。Axios 在一个小包中提供了一个简单易用的库，具有非常可扩展的接口。',
+                link: 'https://javasoho.com/axios/index.html'
+            },
+            {
+                icon: '/icons/mock.svg',
+                title: 'Mock.js',
+                desc: '生成随机数据，拦截 Ajax 请求。',
+                link: 'https://www.lodashjs.com/'
+            },
+            {
+                icon: '/icons/moment.svg',
+                title: 'Moment.js',
+                desc: 'Moment.js 是一个用于解析、校验、操作、显示日期和时间的 JavaScript 工具库。',
+                link: 'https://momentjs.bootcss.com/'
+            },
+            {
+                icon: '/icons/dayjs.png',
+                title: 'Day.js',
+                desc: 'Day.js是一个极简的JavaScript库，可以为现代浏览器解析、验证、操作和显示日期和时间。',
+                link: 'https://dayjs.fenxianglu.cn/'
+            },
+            {
+                icon: '/icons/bmap.png',
+                title: '百度地图',
+                desc: '百度地图API是一套为开发者提供的基于百度地图的应用程序接口，包括JavaScript、iOS、Andriod、静态地图、Web服务等多种版本，提供基本地图、位置搜索、周边搜索、公交驾车导航、定位服务、地理编码及逆地理编码等丰富功能。LBS·云是百度地图针对LBS开发者全新推出的平台级服务。通过地图API，一方面解决移动开发者服务器端日益增长的海量位置数据的存储维护压力，另一方面彻底解决所有LBS开发者基于位置数据的高并发检索瓶颈。',
+                link: 'https://leafletjs.com/'
+            },
+            {
+                icon: '/icons/echarts.png',
+                title: 'Echarts',
+                desc: '一个基于 JavaScript 的开源可视化图表库\n',
+                link: 'https://echarts.apache.org/zh/index.html'
+            },
+            {
+                icon: 'https://threejs.org/files/favicon.ico',
+                title: 'Three.js',
+                desc: 'JavaScript 3d 库',
+                link: 'https://threejs.org'
             }
         ]
     },
@@ -380,16 +269,22 @@ export const navData = [
         title: 'CSS 相关',
         items: [
             {
-                icon: 'https://postcss.org/assets/logo-3e39b0aa.svg',
+                icon: '/icons/postcss.svg',
                 title: 'PostCSS',
-                desc: '一个用 JavaScript 转换 CSS 的工具',
-                link: 'https://postcss.org'
+                desc: 'JavaScript 工具和插件转换 CSS 代码的工具',
+                link: 'https://www.postcss.com.cn/'
             },
             {
                 icon: '/icons/sass.svg',
                 title: 'Sass',
-                desc: '一个成熟，稳定，功能强大的专业级 CSS 扩展语言',
-                link: 'https://sass-lang.com'
+                desc: 'Sass 世界上最成熟、最稳定、最强大的专业级CSS扩展语言！',
+                link: 'https://www.sass.hk'
+            },
+            {
+                icon: '/icons/less.svg',
+                title: 'Less',
+                desc: 'Less 是一门 CSS 预处理语言，它扩展了 CSS 语言，增加了变量、Mixin、函数等特性，使 CSS 更易维护和扩展。Less 可以运行在 Node 或浏览器端',
+                link: 'https://lesscss.org'
             },
             {
                 icon: '/icons/tailwindcss.png',
@@ -416,10 +311,35 @@ export const navData = [
                 link: 'https://qishaoxuan.github.io/css_tricks/'
             },
             {
-                title: 'CSS 常见布局',
-                desc: 'CSS 各种常见的布局实现',
-                link: 'https://sweet-kk.github.io/css-layout/'
-            }
+                icon: '/icons/animate.svg',
+                title: 'animate.css',
+                desc: 'animate.css是一个使用CSS3的animation制作的动画效果的CSS集合，里面预设了很多种常用的动画，且使用非常简单。',
+                link: 'https://animate.style/'
+            },
+            {
+                icon: '/icons/AniCollection.png',
+                title: 'AniCollection',
+                desc: '编码人员和设计师之间更好的集成。易于使用开发速度，在 iPad、iPhone、Android 和现代浏览器中运行良好。',
+                link: 'http://anicollection.github.io/#/'
+            },
+            {
+                icon: '/icons/shake.svg',
+                title: 'CSShake',
+                desc: 'Some CSS classes to move your DOM!',
+                link: 'http://elrumordelaluz.github.io/csshake/'
+            },
+            {
+                icon: '/icons/hover.svg',
+                title: 'Hover.css',
+                desc: '一组 CSS3 驱动的悬停效果，可应用于链接、按钮、徽标、SVG、特色图像等。轻松应用于您自己的元素、修改或仅用于灵感。在 CSS、Sass 和 LESS 中可用。',
+                link: 'http://ianlunn.github.io/Hover/'
+            },
+            {
+                icon: '/icons/animista.png',
+                title: 'animista',
+                desc: 'Animista 是一个 CSS 动画库，您可以在其中播放一系列现成的 CSS 动画并仅下载您将使用的动画。',
+                link: 'https://animista.net/'
+            },
         ]
     },
     {
@@ -510,42 +430,6 @@ export const navData = [
         ]
     },
     {
-        title: '可视化',
-        items: [
-            {
-                icon: '/icons/echarts.png',
-                title: 'ECharts',
-                desc: '一个基于 JavaScript 的开源可视化图表库',
-                link: 'https://echarts.apache.org/zh/index.html'
-            },
-            {
-                icon: '/icons/antv.png',
-                title: 'AntV',
-                desc: '蚂蚁集团全新一代数据可视化解决方案，致力于提供一套简单方便、专业可靠、无限可能的数据可视化最佳实践。',
-                link: 'https://antv.vision/zh/'
-            },
-            {
-                icon: 'https://d3js.org/favicon.png',
-                title: 'D3.js',
-                desc: '一个遵循 Web 标准用于可视化数据的 JavaScript 库',
-                link: 'https://d3js.org'
-            },
-            {
-                icon: 'https://www.chartjs.org/favicon.ico',
-                title: 'Chart.js',
-                desc: '一个简单而灵活的 JavaScript 图表库',
-                link: 'https://www.chartjs.org'
-            },
-            {
-                icon: 'https://threejs.org/files/favicon.ico',
-                // icon: 'https://threejs.org/files/favicon_white.ico',
-                title: 'Three.js',
-                desc: 'JavaScript 3d 库',
-                link: 'https://threejs.org'
-            }
-        ]
-    },
-    {
         title: '编译&构建&打包',
         items: [
             {
@@ -573,10 +457,10 @@ export const navData = [
                 link: 'https://turbo.build'
             },
             {
-                icon: 'https://www.babeljs.cn/img/favicon.png',
+                icon: '/icons/babel.svg',
                 title: 'Babel',
-                desc: 'Babel 是一个 JavaScript 编译器',
-                link: 'https://www.babeljs.cn'
+                desc: 'Babel 是一个 JavaScript 编译器，主要用于将采用 ECMAScript 2015+ 语法编写的代码转换为向后兼容的 JavaScript 语法，以便能够运行在当前和旧版本的浏览器或其他环境中。',
+                link: 'https://www.babeljs.cn/docs/index.html'
             },
             {
                 icon: 'https://esbuild.github.io/favicon.svg',
@@ -608,7 +492,7 @@ export const navData = [
                 link: 'https://iconpark.oceanengine.com/official'
             },
             {
-                icon: '/icons/iconify.png',
+                icon: '/icons/iconify.svg',
                 title: 'Iconify',
                 desc: '一个开源的图标集合和图标工具',
                 link: 'https://iconify.design'
@@ -646,32 +530,83 @@ export const navData = [
         ]
     },
     {
-        title: '前端学习资料',
+        title: '常用工具',
         items: [
             {
-                icon: 'https://developer.mozilla.org/apple-touch-icon.6803c6f0.png',
-                title: 'MDN | Web 开发者指南',
-                desc: 'Mozilla 的开发者平台，提供了大量关于 HTML、CSS 和 JavaScript 的详细文档以及广泛的 Web API 参考资',
-                link: 'https://developer.mozilla.org/zh-CN'
+                icon: 'https://carbon.now.sh/favicon.ico',
+                title: 'Carbon',
+                desc: '代码图片生成',
+                link: 'https://carbon.now.sh'
             },
             {
-                icon: 'https://static.runoob.com/images/favicon.ico',
-                title: '菜鸟教程',
-                desc: '学的不仅是技术，更是梦想！',
-                link: 'https://www.runoob.com'
+                icon: 'https://tool.lu/favicon.ico',
+                title: '在线工具',
+                desc: '开发人员的工具箱',
+                link: 'https://tool.lu'
+            },
+        ]
+    },
+    {
+        title: '高质量周刊与博客',
+        items: [
+            {
+                badge: '周五更新',
+                icon: '/icons/ruanyifeng.jpeg',
+                title: '科技爱好者周刊',
+                desc: '阮一峰的科技爱好者周刊',
+                link: 'https://www.ruanyifeng.com/blog/archives.html'
             },
             {
-                icon: '/icons/es6.svg',
-                title: 'ES6 入门教程',
-                desc: '阮一峰的网络日志',
-                link: 'http://es6.ruanyifeng.com'
+                badge: '周五更新',
+                icon: 'https://s0.ssl.qhres2.com/static/3444fd94a3c31e92.ico',
+                title: '奇舞周刊',
+                desc: '领略前端技术 阅读奇舞周刊（360 前端团队）',
+                link: 'https://weekly.75.team'
             },
             {
-                badge: '官网',
-                icon: 'https://www.typescriptlang.org/icons/icon-72x72.png?v=8944a05a8b601855de116c8a56d3b3ae',
-                title: 'TypeScript',
-                desc: 'TypeScript 是具有类型语法的 JavaScript',
-                link: 'https://www.typescriptlang.org/zh/'
+                badge: '周一更新',
+                icon: 'https://img.alicdn.com/imgextra/i3/O1CN01uKTVpD1UK8BCxFBwo_!!6000000002498-2-tps-500-500.png',
+                title: 'MDH Weekly',
+                desc: '云谦的前端周刊',
+                link: 'https://mdhweekly.com/weekly'
+            },
+            {
+                badge: '每周更新',
+                icon: '/icons/geekhyt-weekly.png',
+                title: '前端食堂技术周刊',
+                desc: '周周尝鲜，人工筛选前端圈每周最新资讯',
+                link: 'https://hungryturbo.zhubai.love'
+                // link: 'https://github.com/Geekhyt/weekly'
+            },
+            {
+                icon: 'https://xiaolincoding.com/logo.webp',
+                title: '小林coding',
+                desc: '小林 x 图解计算机基础（计算机网络、操作系统、计算机组成、数据库）',
+                link: 'https://xiaolincoding.com'
+            },
+            {
+                icon: 'https://antfu.me/favicon.svg',
+                title: 'Blog - Anthony Fu',
+                desc: 'Vue, Vite, Nuxt 核心团队成员 | VueUse, Slidev, Vitest, UnoCSS 作者',
+                link: 'https://antfu.me/posts'
+            },
+            {
+                icon: 'https://cdn.zhangxinxu.com/zxx_ico.png',
+                title: '鑫空间-鑫生活',
+                desc: '张鑫旭的个人博客',
+                link: 'https://www.zhangxinxu.com/wordpress'
+            },
+            {
+                icon: '/icons/ascoders.png',
+                title: '前端精读周刊',
+                desc: '帮你理解最前沿、实用的技术',
+                link: 'https://github.com/ascoders/weekly'
+            },
+            {
+                icon: '/icons/mqyqingfeng.jpeg',
+                title: '冴羽博客',
+                desc: '四个系列：JavaScript深入系列、JavaScript专题系列、ES6系列、React系列',
+                link: 'https://github.com/mqyqingfeng/Blog'
             }
         ]
     },
@@ -735,34 +670,25 @@ export const navData = [
                 link: 'https://momoyu.cc'
             },
             {
-                icon: 'https://v.qq.com/favicon.ico',
-                title: '腾讯视频',
+                icon: 'https://www.gyg.la/favicon.ico',
+                title: '观影',
                 // desc: '中国领先的在线视频媒体平台，海量高清视频在线观看',
-                link: 'https://v.qq.com'
+                link: 'https://www.gyg.la'
             },
             {
                 icon: 'https://static.hdslb.com/mobile/img/512.png',
                 title: '哔哩哔哩',
-                // desc: '',
                 link: 'https://www.bilibili.com'
             },
             {
-                icon: 'https://www.youtube.com/s/desktop/014dbbed/img/favicon_48x48.png',
+                icon: '/icons/youtube.svg',
                 title: 'YouTube',
-                // desc: '',
                 link: 'https://www.youtube.com'
             },
             {
                 icon: '/icons/twitter.svg',
                 title: 'Twitter',
-                // desc: '',
                 link: 'https://twitter.com'
-            },
-            {
-                icon: '/icons/pixiv.png',
-                title: 'Pixiv',
-                // desc: '',
-                link: 'https://www.pixiv.net'
             }
         ]
     }
