@@ -12,7 +12,6 @@
 - 下载相关
   - [Windows 版下载镜像](https://npmmirror.com/mirrors/git-for-windows/)
   - [使用 jsdelivr 加速 Github 仓库资源](https://github.com/maomao1996/daily-notes/issues/7)
-- [commit 常用的 type](/workflow/style-guide#commit-常用的-type)
 
 :::
 
