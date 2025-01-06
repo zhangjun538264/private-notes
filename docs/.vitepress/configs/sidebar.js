@@ -79,7 +79,7 @@ export const sidebar = {
             ]
         }
     ],
-    '/workflow/': [
+    '/views/workflow/': [
         {
             text: '编程规范',
             link: '/workflow/style-guide'
@@ -133,7 +133,7 @@ export const sidebar = {
             text: 'Git 相关',
             collapsed: false,
             items: [
-                { text: 'Git 相关技巧', link: '/workflow/git/' },
+                { text: 'Git 相关技巧', link: 'views/workflow/git/' },
                 { text: 'Git 命令清单', link: '/workflow/git/command' }
             ]
         }

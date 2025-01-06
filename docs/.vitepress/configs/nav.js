@@ -60,7 +60,7 @@ export const nav = [
                     // { text: 'Shell 命令', link: '/workflow/terminal/shell' },
                 ]
             },
-            { text: 'Git 相关技巧', link: '/workflow/git/' }
+            { text: 'Git 相关技巧', link: '/views/workflow/git/' }
             // { text: 'Git 命令清单', link: '/workflow/git/command' }
         ],
         activeMatch: '^/workflow'
