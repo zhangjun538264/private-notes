@@ -3,7 +3,7 @@ export const nav = [
     {
         text: '前端物语',
         items: [
-            { text: 'JavaScript 基础知识', link: '/fe/javascript/types' },
+            { text: 'JavaScript 基础知识', link: '/views/base/javascript/types' },
             { text: 'CSS 理论知识点', link: '/fe/css/' },
             { text: 'ES6 常用知识', link: '/views/base/es6' },
             {
@@ -61,7 +61,7 @@ export const nav = [
                 ]
             },
             { text: 'Git 相关技巧', link: '/views/workflow/git/'},
-            { text: 'Git 使用心得', link: '/views/workflow/git/command'}
+            // { text: 'Git 使用心得', link: '/views/workflow/git/command'}
         ],
         activeMatch: '^/workflow'
     },

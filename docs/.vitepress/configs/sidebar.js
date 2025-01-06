@@ -4,8 +4,8 @@ export const sidebar = {
             text: 'JavaScript 基础知识',
             collapsed: false,
             items: [
-                { text: '数据类型', link: '/fe/javascript/types' },
-                { text: '引用类型的拷贝', link: '/fe/javascript/clone' },
+                { text: '数据类型', link: '/views/base/javascript/types' },
+                { text: '引用类型的拷贝', link: '/views/base/javascript/clone' },
                 { text: '类型转换', link: '/fe/javascript/conversions' },
                 { text: '原型和原型链', link: '/fe/javascript/prototype' },
                 { text: '继承', link: '/fe/javascript/inherit' }
@@ -133,8 +133,8 @@ export const sidebar = {
             text: 'Git 相关',
             collapsed: false,
             items: [
-                { text: 'Git 相关技巧', link: 'views/workflow/git/' },
-                { text: 'Git 使用心得', link: 'views/workflow/git/command' }
+                { text: 'Git 命令清单', link: '/views/workflow/git/' },
+                { text: 'Git 使用心得', link: '/views/workflow/git/command' }
             ]
         }
     ],
