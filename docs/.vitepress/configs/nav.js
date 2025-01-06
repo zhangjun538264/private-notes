@@ -57,11 +57,11 @@ export const nav = [
                 items: [
                     { text: 'Zsh 配置', link: '/workflow/terminal/zsh' },
                     { text: '命令行工具', link: '/workflow/terminal/toolkit' }
-                    // { text: 'Shell 命令', link: '/workflow/terminal/shell' },
+                    // { text: 'Shell 命令', link: '/workflow/terminal/shell'},
                 ]
             },
-            { text: 'Git 相关技巧', link: '/views/workflow/git/' }
-            // { text: 'Git 命令清单', link: '/workflow/git/command' }
+            { text: 'Git 相关技巧', link: '/views/workflow/git/'},
+            { text: 'Git 使用心得', link: '/views/workflow/git/command'}
         ],
         activeMatch: '^/workflow'
     },

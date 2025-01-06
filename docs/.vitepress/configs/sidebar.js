@@ -134,7 +134,7 @@ export const sidebar = {
             collapsed: false,
             items: [
                 { text: 'Git 相关技巧', link: 'views/workflow/git/' },
-                { text: 'Git 命令清单', link: '/workflow/git/command' }
+                { text: 'Git 使用心得', link: 'views/workflow/git/command' }
             ]
         }
     ],
