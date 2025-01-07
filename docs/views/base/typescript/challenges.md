@@ -177,7 +177,7 @@ type result = MyExclude<'name' | 'age' | 'sex', 'sex' | 'address'>
 type MyExclude<T, U> = T extends U ? never : T
 ```
 
-[分布式条件类型](/fe/typescript/base#分布式条件类型)（对联合类型应用 `extends` 时，会遍历联合类型成员并一一应用该条件类型）
+[分布式条件类型](/views/base/typescript/base#分布式条件类型)（对联合类型应用 `extends` 时，会遍历联合类型成员并一一应用该条件类型）
 
 ### `Awaited` 获取 `Promise` 返回值类型
 
@@ -1064,7 +1064,7 @@ type IsUnion<T, C = T> = (T extends T ? (C extends T ? true : unknown) : never) 
 ```
 
 - `T extends T ? (C extends T ? true : unknown) : never` 可以判断 `T` 是否是联合类型
-  - `T extends T` 应用[分布式条件类型](/fe/typescript/base#分布式条件类型)对 `T` 进行子类型分发
+  - `T extends T` 应用[分布式条件类型](/views/base/typescript/base#分布式条件类型)对 `T` 进行子类型分发
   - `C extends T` 判断 `C` 是否是 `T` 的子类型
 
 ```ts
