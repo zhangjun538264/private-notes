@@ -19,9 +19,9 @@ export const sidebar = {
             text: 'TypeScript',
             collapsed: false,
             items: [
-                { text: '基础知识', link: '/fe/typescript/base' },
-                { text: '编译配置', link: '/fe/typescript/tsconfig' },
-                { text: '类型体操', link: '/fe/typescript/challenges' }
+                { text: '基础知识', link: '/views/base/typescript/base' },
+                { text: '编译配置', link: '/views/base/typescript/tsconfig' },
+                { text: '类型体操', link: '/views/base/typescript/challenges' }
             ],
             link: '/fe/typescript/base'
         },

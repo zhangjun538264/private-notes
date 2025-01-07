@@ -8,8 +8,8 @@ export const nav = [
             { text: 'ES6 常用知识', link: '/views/base/es6' },
             {
                 items: [
-                    { text: 'TypeScript 基础知识', link: '/fe/typescript/base' },
-                    { text: 'TypeScript 类型体操', link: '/fe/typescript/challenges' }
+                    { text: 'TypeScript 基础知识', link: '/views/base/typescript/base' },
+                    { text: 'TypeScript 类型体操', link: '/views/base/typescript/challenges' }
                 ]
             },
             { text: 'Webpack', link: '/fe/webpack/' },
