@@ -13,7 +13,7 @@ export const sidebar = {
         },
         {
             text: 'ES6 常用知识点',
-            link: '/fe/es6/'
+            link: '/views/base/es6/'
         },
         {
             text: 'TypeScript',
