@@ -6,9 +6,9 @@ export const sidebar = {
             items: [
                 { text: '数据类型', link: '/views/base/javascript/types' },
                 { text: '引用类型的拷贝', link: '/views/base/javascript/clone' },
-                { text: '类型转换', link: '/fe/javascript/conversions' },
-                { text: '原型和原型链', link: '/fe/javascript/prototype' },
-                { text: '继承', link: '/fe/javascript/inherit' }
+                { text: '类型转换', link: '/views/base/javascript/conversions' },
+                { text: '原型和原型链', link: '/views/base/javascript/prototype' },
+                { text: '继承', link: '/views/base/javascript/inherit' }
             ]
         },
         {
