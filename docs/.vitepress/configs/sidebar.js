@@ -46,7 +46,7 @@ export const sidebar = {
         {
             text: 'Node',
             collapsed: false,
-            items: [{ text: 'package.json', link: '/fe/node/pkg' }]
+            items: [{ text: 'package.json', link: '/views/base/node/pkg' }]
         },
         {
             text: '概念知识点',
