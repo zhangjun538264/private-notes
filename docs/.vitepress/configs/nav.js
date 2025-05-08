@@ -60,7 +60,7 @@ export const nav = [
                     // { text: 'Shell 命令', link: '/workflow/terminal/shell'},
                 ]
             },
-            { text: 'Git 相关技巧', link: '/views/workflow/git/'},
+            { text: 'Git 相关技巧', link: '/views/workflow/git'},
             // { text: 'Git 使用心得', link: '/views/workflow/git/command'}
         ],
         activeMatch: '^/workflow'
@@ -70,6 +70,17 @@ export const nav = [
         items: [
             { text: '日常笔记', link: '/daily-notes/', activeMatch: '^/daily-notes' },
             {
+                text: '读书笔记',
+                items: [
+                    { text: 'Vue.js设计与实现', link: '/views/notes/book/design'},
+                    { text: '第三方库踩坑记录', link: '/pit/library' },
+                    { text: 'PC 踩坑记录', link: '/pit/pc' },
+                    { text: 'H5 踩坑记录', link: '/pit/h5' },
+                    { text: '微信开发踩坑记录', link: '/pit/wechat' }
+                ],
+                activeMatch: '^/daily-notes|book'
+            },
+            {
                 text: '踩坑记录',
                 items: [
                     { text: 'npm 踩坑记录', link: '/pit/npm' },
@@ -77,10 +88,11 @@ export const nav = [
                     { text: 'PC 踩坑记录', link: '/pit/pc' },
                     { text: 'H5 踩坑记录', link: '/pit/h5' },
                     { text: '微信开发踩坑记录', link: '/pit/wechat' }
-                ]
+                ],
+                activeMatch: '^/daily-notes|pit'
             }
         ],
-        activeMatch: '^/daily-notes|pit'
+        activeMatch: '^/notes'
     },
     {
         text: '提效工具',
