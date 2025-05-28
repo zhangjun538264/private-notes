@@ -4,9 +4,7 @@
 * @desc:
 */
 <template>
-    <Layout v-bind="$attrs">
-
-    </Layout>
+    <Layout v-bind="$attrs"></Layout>
 </template>
 
 <script setup>
