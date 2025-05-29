@@ -18,7 +18,7 @@ export const nav = [
         ],
         activeMatch: '^/fe'
     },
-    { text: '源码阅读', link: '/analysis/react/18', activeMatch: '^/analysis' },
+    { text: '源码阅读', link: '/views/core/vue/3.4', activeMatch: '^/core' },
     {
         text: 'Workflow',
         items: [

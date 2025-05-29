@@ -61,11 +61,11 @@ export const sidebar = {
             link: '/fe/coding/'
         }
     ],
-    '/analysis/': [
+    '/views/core/': [
         {
-            text: 'React',
+            text: 'Vue 相关',
             items: [
-                { text: 'React 18 的新特性', link: '/analysis/react/18' },
+                { text: 'Vue3.4源码解析', link: '/views/core/vue/3.4' },
                 { text: 'React 常见面试题', link: '/analysis/react/interview' }
             ]
         },
