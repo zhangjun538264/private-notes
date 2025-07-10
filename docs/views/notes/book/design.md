@@ -221,3 +221,7 @@ function effect() {
 :::
 
 ### 嵌套的 effect 和 effect 栈
+
+:::details 嵌套的 effect 和 effect 栈
+<<< @/views/notes/book/js/design/06-嵌套的effect和effect栈.js
+:::
