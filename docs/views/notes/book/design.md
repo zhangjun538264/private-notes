@@ -186,4 +186,36 @@ function effect() {
 ```
 响应式数据：当数据发生变化时，会自动触发副作用函数执行并导致视图的更新。
 
-### 响应式数据的实现
+### 响应式数据的基本实现
+如何让一个数据变成响应式数据？
+- 拦截一个对象的读取和设置操作，当读取或设置对象的属性时，触发相应的副作用函数执行。
+
+在 `ES2015` 之前，只能通过 `Object.defineProperty` 函数实现，这也是 `Vue.js 2` 所采用的方式。在 `ES2015+` 中，可以使
+用代理对象 `Proxy` 来实现，这也是 `Vue.js 3` 所采用的方式
+
+<<< @/views/notes/book/js/design/01-实现基本的响应式系统.js
+
+### 设计一个完善的响应式系统
+- 完善的响应式系统
+
+:::details 完善的响应式系统
+<<< @/views/notes/book/js/design/02-完善的响应式系统.js
+:::
+
+- 完善的响应式系统与属性之间的关系
+
+:::details 完善的响应式系统与属性之间的关系
+<<< @/views/notes/book/js/design/03-完善响应式系统与属性之间的关系.js
+:::
+
+- 优化
+
+:::details 优化
+<<< @/views/notes/book/js/design/04-优化.js
+:::
+
+### 分支切换与cleanup
+
+:::details 分支切换与cleanup
+<<< @/views/notes/book/js/design/05-分支切换与cleanup.js
+:::

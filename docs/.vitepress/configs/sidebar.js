@@ -59,6 +59,25 @@ export const sidebar = {
         {
             text: '编程题',
             link: '/fe/coding/'
+        },
+        {
+            text: '面试宝典',
+            collapsed: true,
+            items: [
+                { text: 'JavaScript', link: '/views/base/interview/javascript' },
+                { text: 'CSS', link: '/fe/concept/page-rendering' },
+                { text: 'HTML', link: '/fe/concept/module' },
+                { text: 'ES6', link: '/fe/concept/page-rendering' },
+                { text: 'Vue2', link: '/fe/concept/module' },
+                { text: 'Vue3', link: '/fe/concept/page-rendering' },
+                { text: 'React', link: '/fe/concept/module' },
+                { text: 'Node', link: '/fe/concept/page-rendering' },
+                { text: 'TypeScript', link: '/fe/concept/module' },
+                { text: 'Webpack', link: '/fe/concept/page-rendering' },
+                { text: 'Git', link: '/fe/concept/module' },
+                { text: 'HTTP', link: '/fe/concept/page-rendering' },
+                { text: '小程序', link: '/fe/concept/page-rendering' },
+            ]
         }
     ],
     '/views/core/': [

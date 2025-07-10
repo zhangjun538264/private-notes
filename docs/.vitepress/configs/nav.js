@@ -14,7 +14,8 @@ export const nav = [
             },
             { text: 'Webpack', link: '/fe/webpack/' },
             { text: '浏览器相关知识', link: '/fe/browser/' },
-            { text: '编程题', link: '/fe/coding/' }
+            { text: '编程题', link: '/fe/coding/' },
+            { text: '面试宝典', link: '/views/base/interview/javascript' },
         ],
         activeMatch: '^/fe'
     },
