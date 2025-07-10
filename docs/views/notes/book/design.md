@@ -241,3 +241,9 @@ function effect() {
 :::details 控制执行次数
 <<< @/views/notes/book/js/design/09-调度执行-控制执行次数.js
 :::
+
+### 计算属性 computed 与 lazy
+
+:::details computed 与 lazy
+<<< @/views/notes/book/js/design/10-计算属性与lazy.js
+:::
