@@ -225,3 +225,19 @@ function effect() {
 :::details 嵌套的 effect 和 effect 栈
 <<< @/views/notes/book/js/design/06-嵌套的effect和effect栈.js
 :::
+
+### 避免无限递归循环
+
+:::details 嵌套的 effect 和 effect 栈
+<<< @/views/notes/book/js/design/07-避免无限递归循环.js
+:::
+
+### 调度执行
+
+:::details 控制执行顺序
+<<< @/views/notes/book/js/design/08-调度执行-控制执行顺序.js
+:::
+
+:::details 控制执行次数
+<<< @/views/notes/book/js/design/09-调度执行-控制执行次数.js
+:::

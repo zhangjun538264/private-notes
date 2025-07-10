@@ -1,5 +1,5 @@
 const bucket = new WeakMap()
-const data = { text: 'hello world',ok: true }
+const data = { foo: true, bar: true }
 let activeEffect
 const effectStack = [] // effect 栈
 
@@ -29,14 +29,6 @@ const obj = new Proxy(data, {
         return true
     }
 })
-
-effect(() => {
-    document.getElementById('app').innerText = obj.ok ? obj.text : 'not'
-})
-
-setTimeout(() => {
-    obj.ok = false
-},2000)
 
 function track(target, key) {
     if (!activeEffect) return
@@ -70,3 +62,13 @@ function clearUp(effectFn) {
     }
     effectFn.deps.length = 0
 }
+
+let temp1,temp2
+effect(function effectFn1() {
+    console.log("effectFn1执行了");
+    effect(function effectFn2() {
+        console.log("effectFn2执行了");
+        temp2 = obj.bar
+    })
+    temp1 = obj.foo
+})

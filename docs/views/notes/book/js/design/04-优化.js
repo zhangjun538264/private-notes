@@ -19,14 +19,6 @@ const obj = new Proxy(data, {
     }
 })
 
-effect(() => {
-    document.getElementById('app').innerText = obj.text
-})
-
-setTimeout(() => {
-    obj.text = 'hello vue3'
-},2000)
-
 function track(target, key) {
     if (!activeEffect) return
     let depsMap = bucket.get(target)
@@ -48,3 +40,11 @@ function trigger(target, key) {
     const effects = depsMap.get(key)
     effects && effects.forEach(fn => fn())
 }
+
+effect(() => {
+    document.getElementById('app').innerText = obj.text
+})
+
+setTimeout(() => {
+    obj.text = 'hello vue3'
+},2000)

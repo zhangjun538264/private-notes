@@ -1,12 +1,19 @@
 const bucket = new WeakMap()
-const data = { text: 'hello world',ok: true }
+const data = { foo: 1 }
 let activeEffect
+const effectStack = [] // effect 栈
 
 const effect = (fn) => {
     const effectFn = () => {
         clearUp(effectFn)
         activeEffect = effectFn
+        // 在调用副作用函数之前将当前副作用函数压入栈中
+        effectStack.push(effectFn) // 新增
         fn()
+        // 新增
+        // 在当前副作用函数执行完毕后，将当前副作用函数弹出栈，并把 activeEffect 还原为之前的值
+        effectStack.pop()
+        activeEffect = effectStack[effectStack.length - 1]
     }
     effectFn.deps = [] // 依赖集合, activeEffect 也拥有了 deps 属性
     effectFn()
@@ -46,7 +53,11 @@ function trigger(target, key) {
     const effects = depsMap.get(key)
     const effectsToRun = new Set(effects)
     // effects && effects.forEach(fn => fn())
-    effectsToRun.forEach(effectFn => effectFn())
+    effectsToRun.forEach(effectFn => {
+        if (activeEffect !== effectFn)  {
+            effectFn()
+        }
+    })
 }
 
 function clearUp(effectFn) {
@@ -58,9 +69,5 @@ function clearUp(effectFn) {
 }
 
 effect(() => {
-    document.getElementById('app').innerText = obj.ok ? obj.text : 'not'
+   obj.foo++
 })
-
-setTimeout(() => {
-    obj.ok = false
-},2000)
