@@ -219,3 +219,5 @@ function effect() {
 :::details 分支切换与cleanup
 <<< @/views/notes/book/js/design/05-分支切换与cleanup.js
 :::
+
+### 嵌套的 effect 和 effect 栈
