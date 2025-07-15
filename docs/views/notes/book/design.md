@@ -251,3 +251,10 @@ function effect() {
 :::details computed 与 缓存
 <<< @/views/notes/book/js/design/11-计算属性与缓存.js
 :::
+
+### watch 的实现原理
+`watch` 的本质是观测一个响应式数据，当数据发生变化时，通知并执行相应的副作用函数。
+
+:::details watch 的实现原理
+<<< @/views/notes/book/js/design/12-watch的实现原理.js
+:::
