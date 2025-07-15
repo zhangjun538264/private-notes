@@ -8,7 +8,7 @@ div.innerText = 'Hello, World!'; // 设置 div 的文本内容
 div.addEventListener('click', () => alert('ok')); // 绑定点击事件
 ```
 - 声明式: 关注结果
-```javascript
+```vue
 <div @click="() => () => alert('ok')">Hello, World</div>
 ```
 ### 性能与可维护性的权衡
@@ -72,8 +72,8 @@ div.addEventListener('click', () => alert('ok')); // 绑定点击事件
 ## 第三章 Vue.js 3的设计思路
 
 ### 声明式的描述 UI
-```javascript
-<div :id="id" :class="class" @click="handler">Hello World</div>
+```vue
+<div :id="id" :class="class1" @click="handler">Hello World</div>
 ```
 
 ### 初识渲染器
@@ -88,7 +88,7 @@ div.addEventListener('click', () => alert('ok')); // 绑定点击事件
 const vnode = {
     tag: 'div',
     props: {
-        onClick: () => alert('click');
+        onClick: () => alert('click')
     },
     children: 'click me'
 }
@@ -118,7 +118,7 @@ function renderer(vnode, container) {
 
 ### 模板的工作原理
 - 模板编译: 将模板编译为渲染函数(`render`),
-```javascript
+```vue
 // 模板
 <div @click="handleClick">click me</div>
 // 编译后的渲染函数
@@ -246,4 +246,8 @@ function effect() {
 
 :::details computed 与 lazy
 <<< @/views/notes/book/js/design/10-计算属性与lazy.js
+:::
+
+:::details computed 与 缓存
+<<< @/views/notes/book/js/design/11-计算属性与缓存.js
 :::
