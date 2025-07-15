@@ -92,7 +92,6 @@ const flushJob = () => {
 }
 
 const computed = (getter) => {
-
     const effectFn = effect(getter, {lazy: true})
     return {
         get value() {
