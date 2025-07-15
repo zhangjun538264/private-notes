@@ -125,6 +125,7 @@ const computed = (getter) => {
     return obj
 }
 const sumRes = computed(() => obj.foo + obj.bar)
+
 console.log(sumRes.value); // 3
 obj.foo++
 console.log(sumRes.value); // 4
