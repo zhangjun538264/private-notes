@@ -258,3 +258,9 @@ function effect() {
 :::details watch 的实现原理
 <<< @/views/notes/book/js/design/12-watch的实现原理.js
 :::
+
+### 立即执行的 watch 与回调执行时机
+
+:::details watch 的立即执行
+<<< @/views/notes/book/js/design/13-watch的立即执行.js
+:::

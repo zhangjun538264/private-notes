@@ -79,48 +79,45 @@ function clearUp(effectFn) {
 }
 
 function traverse(value, seen = new Set()) {
-    // 新增：判断数据是否是原始值，如果是，什么都不做
     if (typeof value !== 'object' || value === null || seen.has(value)) return
-    // 将数据添加到 seen 中，代表遍历地读取过了，避免循环引用引起的死循环
     seen.add(value)
-    // 暂时不考虑数组等其他结构
-    // 假设 value 就是一个对象，使用 for...in 读取对象的每一个值，并递归地调用 traverse 进行处理
     for (const k in value) {
         traverse(value[k], seen)
     }
     return value
 }
 
-const watch = (source,cb) => {
-    // 定义 getter
+const watch = (source,cb,options = {}) => {
     let getter
-    // 如果 source 是函数，说明用户传递的是 getter，所以直接把 source 赋值给 getter
     if (typeof source === 'function') {
         getter = source
     } else {
-        // 否则按照原来的实现调用 traverse 递归地读取
         getter = () => traverse(source)
     }
-    // 定义新值和旧值
     let oldValue, newValue
-    // 使用 effect 注册副作用函数时，开启 lazy 选项，并把返回值存储到 effectFn 中以便后续手动调用
+    // 新增, 提取 scheduler 调度函数作为一个独立的函数
+    const job = () => {
+        newValue = effectFn()
+        cb(newValue, oldValue)
+        oldValue = newValue
+    }
     const effectFn = effect(() => getter(),{
         lazy: true,
-        scheduler() {
-            // 在 scheduler 中重新执行副作用函数，得到的是新值
-            newValue = effectFn()
-            // 把旧值和新值作为回调函数的参数
-            cb(newValue, oldValue)
-            // 更新旧值，不然下一次会得到错误的旧值
-            oldValue = newValue
-        }
+        // 新增, 使用 job 函数作为调度函数
+        scheduler: job
     })
-    oldValue = effectFn()
+    // 新增, immediate 为 true 立即执行
+    if (options.immediate) {
+        job()
+    } else {
+        oldValue = effectFn()
+    }
 }
 
 // watch 的第一个参数是响应式数据
 watch(() => obj.foo, (newValue,oldValue) => {
-    console.log(newValue); // 2
-    console.log(oldValue); // 1
+    console.log(newValue); // 1
+    console.log(oldValue); // undefined
+},{
+    immediate: true,
 })
-obj.foo++
