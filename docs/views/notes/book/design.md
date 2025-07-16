@@ -264,3 +264,7 @@ function effect() {
 :::details watch 的立即执行
 <<< @/views/notes/book/js/design/13-watch的立即执行.js
 :::
+
+:::details watch 的回调执行时机
+<<< @/views/notes/book/js/design/14-watch的回调执行时机.js
+:::
