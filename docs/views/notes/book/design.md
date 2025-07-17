@@ -274,3 +274,20 @@ function effect() {
 :::details 过期的副作用
 <<< @/views/notes/book/js/design/15-过期的副作用.js
 :::
+
+## 第五章 非原始值的响应式方案
+
+### 理解 Proxy 和 Reflect
+
+:::info 理解 Proxy
+ `Proxy` 可以创建一个代理对象，实现对`其他对象`的代理
+- 只能代理对象，无法代理非对象值，如字符串、数字、布尔值等。
+- 代理对象的操作，会被自动转发到目标对象。
+- 可以自定义代理行为，如属性访问、赋值、函数调用等。
+:::
+
+:::info 理解 Reflect
+`Reflect` 下的方法与 `Proxy` 的拦截器方法名字相同。任何在 Proxy 的拦截器中能够找到的方法，都能够在 Reflect 中找到同名函数。
+- 在 Proxy 中使用 this 时，保证 this 指向 proxy，从而正确执行次数的副作用。
+  :::
+
