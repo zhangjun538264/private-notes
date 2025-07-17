@@ -268,3 +268,9 @@ function effect() {
 :::details watch 的回调执行时机
 <<< @/views/notes/book/js/design/14-watch的回调执行时机.js
 :::
+
+### 过期的副作用
+
+:::details 过期的副作用
+<<< @/views/notes/book/js/design/15-过期的副作用.js
+:::
