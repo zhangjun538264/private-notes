@@ -12,7 +12,13 @@ export const nav = [
                     { text: 'TypeScript 类型体操', link: '/views/base/typescript/challenges' }
                 ]
             },
-            { text: 'Webpack', link: '/fe/webpack/' },
+            {
+                text: '前端工程化',
+                items: [
+                    { text: 'Vite', link: '/views/notes/study/vite' },
+                    { text: 'Webpack', link: '/fe/webpack/' },
+                ]
+            },
             { text: '浏览器相关知识', link: '/fe/browser/' },
             { text: '编程题', link: '/fe/coding/' },
             { text: '面试宝典', link: '/views/base/interview/javascript' },
