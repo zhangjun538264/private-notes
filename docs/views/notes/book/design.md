@@ -64,7 +64,7 @@ div.addEventListener('click', () => alert('ok')); // 绑定点击事件
   - `vue.global.js` 用于开发环境，它包含必要的警告信息
   - `vue.global.prod.js` 用于生产环境，不包含警告信息
 - 根据使用场景的不同而输出其他形式的产物
-<img src="..\img\img.png" width="406" height="588"/>
+<img src="./../../../public/img/img.png" width="406" height="588"/>
 
 ### 错误处理
 - 统一的错误处理接口：callWithErrorHandling

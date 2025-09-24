@@ -33,7 +33,14 @@ export const sidebar = {
                 { text: 'CSS 理论知识点', link: '/fe/css/' }
             ]
         },
-        { text: ' Webpack', link: '/fe/webpack/' },
+        {
+            text: '前端工程化',
+            collapsed: false,
+            items: [
+                { text: 'Vite', link: '/views/base/build/vite' },
+                { text: 'Webpack', link: '/fe/webpack/' },
+            ]
+        },
         {
             text: '浏览器与网络',
             collapsed: false,

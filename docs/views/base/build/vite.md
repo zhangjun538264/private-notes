@@ -15,7 +15,7 @@ pnpm create vite
 ```
 在命令行窗口中执行以上命令，出现如下提示
 
-<img src="..\img\vite_init.png" width="683" height="327" alt=""/>
+<img src="../../../public/img/vite_init.png" width="683" height="327" alt=""/>
 
 根据提示输入项目名称和选择的框架，即可创建一个基于 Vite 的项目，
 
