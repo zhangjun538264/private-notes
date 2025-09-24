@@ -16,7 +16,7 @@ export const nav = [
                 text: '前端工程化',
                 items: [
                     { text: 'Vite', link: '/views/base/build/vite' },
-                    { text: 'Webpack', link: '/fe/webpack/' },
+                    { text: 'Webpack', link: '/fe/webpack/' }
                 ]
             },
             { text: '浏览器相关知识', link: '/fe/browser/' },
