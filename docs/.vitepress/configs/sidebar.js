@@ -71,9 +71,9 @@ export const sidebar = {
             text: '面试宝典',
             collapsed: true,
             items: [
+                { text: '计算机基础', link: '/views/base/interview/computerBase' },
+                { text: 'HTML 和 CSS', link: '/views/base/interview/html-css' },
                 { text: 'JavaScript', link: '/views/base/interview/javascript' },
-                { text: 'CSS', link: '/fe/concept/page-rendering' },
-                { text: 'HTML', link: '/fe/concept/module' },
                 { text: 'ES6', link: '/fe/concept/page-rendering' },
                 { text: 'Vue2', link: '/fe/concept/module' },
                 { text: 'Vue3', link: '/fe/concept/page-rendering' },

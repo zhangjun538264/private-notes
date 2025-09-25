@@ -21,7 +21,7 @@ export const nav = [
             },
             { text: '浏览器相关知识', link: '/fe/browser/' },
             { text: '编程题', link: '/fe/coding/' },
-            { text: '面试宝典', link: '/views/base/interview/javascript' },
+            { text: '面试宝典', link: '/views/base/interview/computerBase' },
         ],
         activeMatch: '^/fe'
     },
