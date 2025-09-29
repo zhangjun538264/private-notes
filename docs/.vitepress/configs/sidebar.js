@@ -74,15 +74,15 @@ export const sidebar = {
                 { text: '计算机基础', link: '/views/base/interview/computerBase' },
                 { text: 'HTML 和 CSS', link: '/views/base/interview/html-css' },
                 { text: 'JavaScript', link: '/views/base/interview/javascript' },
+                { text: 'TypeScript', link: '/views/base/interview/typescript' },
+                { text: 'HTTP', link: '/views/base/interview/http' },
                 { text: 'ES6', link: '/fe/concept/page-rendering' },
                 { text: 'Vue2', link: '/fe/concept/module' },
                 { text: 'Vue3', link: '/fe/concept/page-rendering' },
                 { text: 'React', link: '/fe/concept/module' },
                 { text: 'Node', link: '/fe/concept/page-rendering' },
-                { text: 'TypeScript', link: '/fe/concept/module' },
                 { text: 'Webpack', link: '/fe/concept/page-rendering' },
                 { text: 'Git', link: '/fe/concept/module' },
-                { text: 'HTTP', link: '/fe/concept/page-rendering' },
                 { text: '小程序', link: '/fe/concept/page-rendering' },
             ]
         }
